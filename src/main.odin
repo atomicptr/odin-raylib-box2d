@@ -77,7 +77,7 @@ main :: proc() {
 		entity.texture = box_texture
 
 		shape_def := b2.DefaultShapeDef()
-		shape_def.restitution = 0.1
+		shape_def.material.restitution = 0.1
 		_ = b2.CreatePolygonShape(entity.body_id, shape_def, tile_polygon)
 	}
 
